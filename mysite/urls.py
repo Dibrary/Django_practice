@@ -13,4 +13,5 @@ urlpatterns = [
 
 #    path('kdh/', views.index, name='index'),
 #    path('kdh/', include('kdh.urls')),
+    path('books/', include('books.urls')),
 ]
