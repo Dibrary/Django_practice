@@ -3,6 +3,8 @@ from django.contrib import admin
 from django.urls import path, include
 from polls import views
 
+from bookmark.views import BookmarkLV, BookmarkDV
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
@@ -13,5 +15,5 @@ urlpatterns = [
 
 #    path('kdh/', views.index, name='index'),
 #    path('kdh/', include('kdh.urls')),
-    path('books/', include('books.urls')),
+    path('bookmark/', include('bookmark.urls')),
 ]

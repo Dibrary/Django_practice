@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-qng3flcpppijiq!))p-jr&a-=)*erw_r*(9*omq%@t^rr(=_!d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost'] # localhost로 하면 브라우저에서 localhost로 접속 가능
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '0.0.0.0'] # localhost로 하면 브라우저에서 localhost로 접속 가능
 
 
 # Application definition
@@ -24,7 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'polls.apps.PollsConfig', # python manage.py startapp polls로 만든 애플리케이션 등록
-    'books.apps.BooksConfig',
+    'bookmark.apps.BookmarkConfig',
 ]
 
 MIDDLEWARE = [
