@@ -4,9 +4,11 @@ from django.urls import path, include
 from polls import views
 
 from bookmark.views import BookmarkLV, BookmarkDV
+from mysite.views import HomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', HomeView.as_view(), name='home'),
     path('polls/', include('polls.urls')),
     # path('polls/', views.index, name='index'),
     # path('polls/<int:question_id>/', views.detail, name='detail'),
