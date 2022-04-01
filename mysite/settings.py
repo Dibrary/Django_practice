@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'polls.apps.PollsConfig', # python manage.py startapp polls로 만든 애플리케이션 등록
     'bookmark.apps.BookmarkConfig',
     'blog.apps.BlogConfig',
+    'taggit.apps.TaggitAppConfig',
 ]
 
 MIDDLEWARE = [
@@ -112,3 +113,6 @@ STATICFILES_DIRS=[os.path.join(BASE_DIR, 'static')]
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+TAGGIT_CASE_INSENSITIVE = True
+TAGGIT_LIMIT = 50
