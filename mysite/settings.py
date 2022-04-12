@@ -117,3 +117,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 TAGGIT_CASE_INSENSITIVE = True
 TAGGIT_LIMIT = 50
+
+
+DISQUS_SHORTNAME = 'pydjango-web-programming'
+DISQUS_MY_DOMAIN = 'http://localhost:8000'
