@@ -23,12 +23,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'books.apps.BooksConfig',
     'polls.apps.PollsConfig', # python manage.py startapp polls로 만든 애플리케이션 등록
     'bookmark.apps.BookmarkConfig',
     'blog.apps.BlogConfig',
     'taggit.apps.TaggitAppConfig',
-    'taggit_templatetags2'
+    'taggit_templatetags2',
+    'photo.apps.PhotoConfig',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +123,6 @@ TAGGIT_LIMIT = 50
 
 DISQUS_SHORTNAME = 'pydjango-web-programming'
 DISQUS_MY_DOMAIN = 'http://localhost:8000'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
