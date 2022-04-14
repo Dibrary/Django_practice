@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'taggit.apps.TaggitAppConfig',
     'taggit_templatetags2',
+    'widget_tweaks',
     'photo.apps.PhotoConfig',
 ]
 
@@ -126,3 +127,5 @@ DISQUS_MY_DOMAIN = 'http://localhost:8000'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+LOGIN_REDIRECT_URL = '/'
